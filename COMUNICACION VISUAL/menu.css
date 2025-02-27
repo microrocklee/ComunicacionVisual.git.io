@@ -1,0 +1,158 @@
+/* Fondo de la página con colores armoniosos */
+body {
+    background: linear-gradient(to bottom, #f8b400, #ff8c42);
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Menú de navegación */
+#header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+}
+
+.nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav > li {
+    position: relative;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav a:hover {
+    color: #f8b400;
+}
+
+/* Submenús */
+.nav ul {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.9);
+    list-style: none;
+    padding: 10px;
+    display: none;
+    min-width: 200px;
+}
+
+.nav li:hover > ul {
+    display: block;
+}
+
+.nav ul li {
+    width: 100%;
+}
+
+/* Estilo del contenido */
+h1, h2 {
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo de los párrafos */
+p {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    border-radius: 8px;
+    display: inline-block;
+    max-width: 80%;
+    text-align: justify;
+}
+
+/* Tarjetas de imágenes */
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 15px;
+    text-align: center;
+    color: white;
+}
+
+.card img {
+    border-radius: 10px 10px 0 0;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.card-text {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Tabla de imágenes */
+table {
+    margin: auto;
+}
+
+td {
+    padding: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .nav ul {
+        position: static;
+        display: none;
+    }
+
+    .nav li:hover ul {
+        display: block;
+    }
+
+    p {
+        max-width: 90%;
+    }
+}
+/* Estilos para la lista de características */
+.caracteristicas {
+    list-style: none;
+    padding: 0;
+    max-width: 80%;
+    margin: auto;
+}
+
+.caracteristicas li {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.mi-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+ul {
+    list-style: none !important;
+}

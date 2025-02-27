@@ -1,0 +1,95 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Gris muy claro para el fondo */
+    color: #333; /* Gris oscuro para el texto principal */
+}
+
+.cau-container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #ffffff; /* Blanco para el contenedor */
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.cau-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #222; /* Gris más oscuro para el título */
+}
+
+.cau-description {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    color: #444; /* Gris ligeramente más claro para la descripción */
+}
+
+.cau-box {
+    background-color: #e8e8e8; /* Gris claro para los recuadros */
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+    display: inline-block;
+    width: 200px;
+    vertical-align: top;
+    color: #333;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.cau-box h3 {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #222;
+}
+
+/* Estilos para el menú de navegación (si es necesario) */
+#header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+.nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.nav li {
+    display: inline-block;
+    position: relative;
+}
+
+.nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.nav a:hover {
+    background-color: #555;
+}
+
+.nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.nav ul li:hover > ul {
+    display: block;
+}
+
+.nav ul ul li {
+    display: block;
+}
